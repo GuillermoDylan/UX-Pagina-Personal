@@ -1,0 +1,56 @@
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid grey;
+    border-style: groove;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic; 
+    color: grey;
+    padding: 10px;
+    font-size: 1em;
+}
+
+article {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 100%;
+}
+
+/* For tablets and larger screens */
+@media (min-width: 600px) {
+    article {
+        max-width: 600px;
+        margin: 20px auto;
+    }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 1024px) {
+    article {
+        max-width: 800px;
+        margin: 30px auto;
+    }
+}
+
+/* For tablets and larger screens */
+@media (min-width: 600px) {
+    figcaption {
+        font-size: 1.2em;
+    }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 1024px) {
+    figcaption {
+        font-size: 1.4em;
+    }
+}
