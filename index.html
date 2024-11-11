@@ -7,6 +7,17 @@
     <meta name="description" content="Página personal de Guillermo Dylan Carvajal Aza">
     <title>Página Personal</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script type="module">
+        import EmbeddedPageSdk from "https://app.realeye.io/sdk/js/testRunnerEmbeddableSdk-1.6.js"
+        
+        window.addEventListener("DOMContentLoaded", () => {
+           const debugMode = false;
+           const stimulusId = null; // Or Stimulus/Item UUID from RealEye Study, e.g. "61560b76-3d31-4f0e-b530-55bd8709aadb"
+           const forceRun = false;
+        
+           const reSdk = new EmbeddedPageSdk(debugMode, stimulusId, forceRun)
+        });
+    </script>
     <!-- Hotjar Tracking Code for https://guillermodylan.github.io/UX-Pagina-Personal/ -->
     <script>
         (function(h,o,t,j,a,r){
@@ -41,6 +52,10 @@
     </header>
 
     <div>
+        <button>Finish</button>
+        <script>
+            document.querySelector('button').addEventListener("click", () => reSdk.finishEyeTrackingTest())
+        </script>
         <main>
             <section>
                 <h2>Sobre mí</h2>
