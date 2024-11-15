@@ -23,7 +23,7 @@ header {
     padding: 10px;
     margin: 0;
     margin-bottom: 10px;
-    background-color: #2196F3; /* Changed to blue */
+    background-color: #003b6b;
     color: white;
 }
 
@@ -59,7 +59,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
-    background-color: #2196F3; /* Changed to blue */
+    background-color: #003b6b;
 }
 
 a {
@@ -94,7 +94,7 @@ h3 {
     background-color: #c6c6c6;
     margin-bottom: 5px;
     padding: 10px;
-    border-left: 5px solid #2196F3;
+    border-left: 5px solid #003b6b;
 }
 
 p, ul {
@@ -108,7 +108,7 @@ ul {
 ul li {
     background-color: #c6c6c6;
     margin-bottom: 5px;
-    border-left: 5px solid #2196F3;
+    border-left: 5px solid #003b6b;
 }
 
 ul li a img{
@@ -122,7 +122,7 @@ article ul li {
     background-color: #c6c6c6;
     margin-bottom: 5px;
     padding: 10px;
-    border-left: 5px solid #2196F3; /* Changed to blue */
+    border-left: 5px solid #003b6b;
 }
 
 section ul{
@@ -201,7 +201,7 @@ footer {
     text-align: center;
     width: 100%;
     padding: 10px;
-    background-color: #2196F3; /* Changed to blue */
+    background-color: #003b6b; 
     color: white;
     margin-top: 20px;
 }

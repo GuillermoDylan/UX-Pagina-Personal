@@ -17,6 +17,10 @@ function searchContent(domTree, page) {
             return;
         }
 
+        // Remove <header> elements from the element
+        const headers = elemento.querySelectorAll("header");
+        headers.forEach(header => header.remove());
+
         // Take the text content of the element
         const texto = elemento.innerText || elemento.textContent;
         
@@ -48,9 +52,6 @@ function searchContent(domTree, page) {
                 resultsContainer.appendChild(resultItem);
             }
         }
-
-        // Recursively search through child elements
-        Array.from(elemento.children).forEach(child => deepSearch(child));
     }
 
     // Start deep search from the body element
@@ -68,7 +69,7 @@ function jaccardSimilarity(str1, str2) {
     return intersection.size / union.size;
 }
 
-const files = ["UX-Pagina-Personal/index.html", "UX-Pagina-Personal/contacto.html", "UX-Pagina-Personal/proyectos.html"];
+const files = ["index.html", "contacto.html", "proyectos.html"];
 
 async function leerContenidoArchivo(archivo) {
     const response = await fetch(`../${archivo}`);
