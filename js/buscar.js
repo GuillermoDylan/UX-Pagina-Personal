@@ -40,7 +40,8 @@ function searchContent(domTree, page) {
                 const snippet = words.slice(start, end).join(" ");
                 const highlightedSnippet = snippet.replace(regex, match => `<mark>${match}</mark>`);
                 const resultItem = document.createElement("div");
-                resultItem.innerHTML = `<a href="${page}"><h3>${elemento.closest("h3") ? elemento.closest("h3").innerText : title}</h3><p>... ${highlightedSnippet} ...</p></a>`;
+                const pageName = page.split("/")[1];
+                resultItem.innerHTML = `<a href="${page}"><h3>${elemento.closest("h3") ? elemento.closest("h3").innerText : title}</h3><p>... ${highlightedSnippet} ...</p><p><small>${pageName}</small></p></a>`;
                 
                 resultsContainer.appendChild(resultItem);
             }
