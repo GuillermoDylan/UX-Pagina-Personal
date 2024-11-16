@@ -21,6 +21,9 @@ function searchContent(domTree, page) {
         const headers = elemento.querySelectorAll("header");
         headers.forEach(header => header.remove());
 
+        const footers = elemento.querySelectorAll("footer");
+        footers.forEach(footer => footer.remove());
+
         // Take the text content of the element
         const texto = elemento.innerText || elemento.textContent;
         
