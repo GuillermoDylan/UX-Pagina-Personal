@@ -8,14 +8,6 @@ section img {
     height: auto;
 }
 
-figcaption {
-    text-align: center;
-    font-style: italic; 
-    color: grey;
-    padding: 10px;
-    font-size: 1em;
-}
-
 article {
     padding: 20px;
     margin: 10px;

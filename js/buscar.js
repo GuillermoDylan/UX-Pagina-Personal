@@ -69,7 +69,7 @@ function jaccardSimilarity(str1, str2) {
     return intersection.size / union.size;
 }
 
-const files = ["UX-Pagina-Personal/index.html", "UX-Pagina-Personal/contacto.html", "UX-Pagina-Personal/proyectos.html"];
+const files = ["UX-Pagina-Personal/index.html", "UX-Pagina-Personal/contacto.html", "UX-Pagina-Personal/proyectos.html", "UX-Pagina-Personal/proyectos/randomPeace.html"];
 
 async function leerContenidoArchivo(archivo) {
     const response = await fetch(`../${archivo}`);
