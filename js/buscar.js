@@ -42,7 +42,7 @@ function searchContent(domTree, page) {
                 const resultItem = document.createElement("div");
                 const parts = page.split("/");
                 const pageName = parts[1] ? parts[1] + "/" + (parts[2] || "") : "";
-                resultItem.innerHTML = `<a href="${pageName}"><h3>${elemento.closest("h3") ? elemento.closest("h3").innerText : title}</h3><p>... ${highlightedSnippet} ...</a>`;
+                resultItem.innerHTML = `<a href="${pageName}"><h3>${elemento.closest("h3") ? elemento.closest("h3").innerText : title}</h3><p>... ${highlightedSnippet} ...</p></a>`;
                 
                 resultsContainer.appendChild(resultItem);
             }
